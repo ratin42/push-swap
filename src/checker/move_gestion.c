@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   move_gestion.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:01:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/08 03:06:00 by ratin            ###   ########.fr       */
+/*   Updated: 2019/06/22 22:06:39 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@ void		make_move_3(t_push *push, char *str)
 	if (ft_strcmp(str, "rra") == 0)
 	{
 		reverse_rotate(push, 'a');
-		ft_putstr("rr\na");
+		ft_putstr("rra\n");
 	}
 	if (ft_strcmp(str, "rrb") == 0)
 	{
 		reverse_rotate(push, 'b');
-		ft_putstr("rr\nb");
+		ft_putstr("rrb\n");
 	}
 	if (ft_strcmp(str, "rrr") == 0)
 	{
 		reverse_reverse(push);
-		ft_putstr("rr\nr");
+		ft_putstr("rrr\n");
 	}
 }
 

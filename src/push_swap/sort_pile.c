@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_pile.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:40:25 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/08 06:23:38 by ratin            ###   ########.fr       */
+/*   Updated: 2019/06/22 22:05:30 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,30 +41,40 @@ int			put_pivot(t_push *push, char pile)
 	return (nbr);
 }
 
-/* int			put_pivot(t_push *push, char pile)
+void		do_little_sort(t_push *push)
 {
-	t_pile	*last;
-	int		median;
-	
-	median = 1;
-	if (pile == 'a')
-		last = push->pile_a;
-	else
-		last = push->pile_b;
-	while (last)
+	int		top;
+	int		middle;
+	int		bottom;
+
+	top = push->pile_a->nbr;
+	middle = push->pile_a->next->nbr;
+	bottom = push->pile_a->next->next->nbr;
+	if (top > middle && middle < bottom && bottom > top)
+		make_move(push, "sa");
+	else if (top > middle && middle > bottom && bottom < top)
 	{
-		if (median == len_pile(push, pile) / 2)
-		{
-			last->pivot = 1;
-			return (last->nbr);
-		}
-		median++;
-		last = last->next;
+		make_move(push, "sa");
+		make_move(push, "rra");
 	}
-	return (ERROR);
-} */
+	else if (top > middle && middle < bottom && bottom < top)
+		make_move(push, "ra");
+	else if (top < middle && middle > bottom && bottom > top)
+	{
+		make_move(push, "sa");
+		make_move(push, "ra");
+	}
+	else if (top < middle && middle > bottom && bottom < top)
+		make_move(push, "rra");
+}
 
 void		sort_pile(t_push *push)
 {
-	do_sort(push);
+	if (len_pile(push, 'a') == 3)
+		do_little_sort(push);
+	else if (len_pile(push, 'a') == 2
+	&& push->pile_a->nbr > push->pile_a->next->nbr)
+		make_move(push, "sa");
+	else
+		do_sort(push);
 }
