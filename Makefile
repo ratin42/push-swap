@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ratin <ratin@student.42.fr>                +#+  +:+       +#+         #
+#    By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 18:46:26 by ratin             #+#    #+#              #
-#    Updated: 2019/06/08 07:37:24 by ratin            ###   ########.fr        #
+#    Updated: 2019/06/28 01:56:34 by Raphael          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRC_NAME1		:=	sort_pile.c \
 					sort_work.c \
 					working_stack_a.c \
 					working_stack_b.c \
+					mid_sort_replace.c \
 
 SRC_NAME2		:=	parse.c \
 					free.c \

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:43:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/08 03:05:49 by ratin            ###   ########.fr       */
+/*   Updated: 2019/06/28 15:06:35 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,12 @@ void	sort_pile(t_push *push);
 void	add_elem(t_push *push, int nbr);
 int		len_pile(t_push *push, char pile);
 int		len_pile_sorted(t_push *push, char pile);
+int		get_last(t_push *push, char pile);
 
 int		parse_input(t_push *push, int ac, char **av);
+void	do_little_sort(t_push *push);
+void	do_mid_sort(t_push *push);
+void	mid_sort_replace(t_push *push);
 void	free_double_char(char **array);
 void	check_output(t_push *push, char *str);
 void	quit_prog(t_push *push);

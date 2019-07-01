@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 00:46:31 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/05 00:41:38 by ratin            ###   ########.fr       */
+/*   Updated: 2019/06/28 17:50:03 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ void		transfer_elem(t_push *push, t_pile **src, t_pile **dst)
 	tmp = (*dst);
 	(*dst) = (*src);
 	(*src) = (*src)->next;
+	(*src)->prev = NULL;
 	(*dst)->next = tmp;
+	//printf("passage tmp = %d\n", tmp->nbr);
+	(*dst)->prev = NULL;
 	(void)tmp;
 	(void)dst;
 	(void)push;
