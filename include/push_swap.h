@@ -6,7 +6,7 @@
 /*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:43:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/28 15:06:35 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/03 13:23:30 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	rotate(t_push *push, char pile);
 void	rotate_rotate(t_push *push);
 void	reverse_rotate(t_push *push, char pile);
 void	reverse_reverse(t_push *push);
+void	replace_prev(t_push *push);
 
 /*
 ** pile function
@@ -45,6 +46,8 @@ void	add_elem(t_push *push, int nbr);
 int		len_pile(t_push *push, char pile);
 int		len_pile_sorted(t_push *push, char pile);
 int		get_last(t_push *push, char pile);
+t_pile	*create_elem(t_push *push, int nbr);
+void	move_first_top(t_push *push, t_pile *first);
 
 int		parse_input(t_push *push, int ac, char **av);
 void	do_little_sort(t_push *push);

@@ -6,7 +6,7 @@
 /*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:01:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/22 22:06:39 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/03 13:23:08 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ void		make_move(t_push *push, char *str)
 		ft_putstr("pa\n");
 	}
 	make_move_2(push, str);
+	replace_prev(push);
 }
 
 void		check_output(t_push *push, char *str)

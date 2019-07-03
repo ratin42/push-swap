@@ -6,7 +6,7 @@
 /*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:40:25 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/28 17:18:45 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/03 13:45:26 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,9 @@ void		sort_pile(t_push *push)
 	else if (len_pile(push, 'a') == 2
 	&& push->pile_a->nbr > push->pile_a->next->nbr)
 		make_move(push, "sa");
-	//else if (len_pile(push, 'a') == 5 || len_pile(push, 'a') == 4 )
 	else if (len_pile(push, 'a') <= 1000)
 		do_mid_sort(push);
 	else
 		do_sort(push);
-	print_pile(push);
+	//print_pile(push);
 }
