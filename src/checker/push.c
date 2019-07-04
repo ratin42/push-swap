@@ -6,7 +6,7 @@
 /*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 00:46:31 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/03 13:24:31 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/04 06:02:45 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void		transfer_elem(t_push *push, t_pile **src, t_pile **dst)
 	t_pile	*tmp;
 
 	cpy = create_elem(push, (*src)->nbr);
-	cpy->pivot = (*src)->pivot;
 	cpy->sorted = (*src)->sorted;
 	if ((*dst) != NULL)
 		(*dst)->prev = cpy;

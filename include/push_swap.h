@@ -6,7 +6,7 @@
 /*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:43:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/03 13:23:30 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/04 06:04:20 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,12 @@ void	replace_prev(t_push *push);
 /*
 ** pile function
 */
+t_pile	*create_elem(t_push *push, int nbr);
 void	free_pile(t_push *push);
 void	sort_pile(t_push *push);
 void	add_elem(t_push *push, int nbr);
 int		len_pile(t_push *push, char pile);
 int		len_pile_sorted(t_push *push, char pile);
-int		get_last(t_push *push, char pile);
-t_pile	*create_elem(t_push *push, int nbr);
 void	move_first_top(t_push *push, t_pile *first);
 
 int		parse_input(t_push *push, int ac, char **av);
@@ -57,9 +56,6 @@ void	free_double_char(char **array);
 void	check_output(t_push *push, char *str);
 void	quit_prog(t_push *push);
 void	do_sort(t_push *push);
-int		put_pivot(t_push *push, char pile);
-void	working_stack_a(t_push *push);
-void	working_stack_b(t_push *push);
 
 /*
 ** DEBUG

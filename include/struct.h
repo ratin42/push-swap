@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:46:59 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/08 01:58:05 by ratin            ###   ########.fr       */
+/*   Updated: 2019/07/04 06:00:24 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ typedef struct		s_push_swap
 typedef struct		s_pile
 {
 	int				nbr;
-	int				pivot;
 	int				sorted;
 	struct s_pile	*next;
 	struct s_pile	*prev;
