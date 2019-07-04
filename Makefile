@@ -6,7 +6,7 @@
 #    By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 18:46:26 by ratin             #+#    #+#              #
-#    Updated: 2019/06/28 01:56:34 by Raphael          ###   ########.fr        #
+#    Updated: 2019/07/04 06:01:12 by Raphael          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,6 @@ LIB_PATH		:=	libft
 
 SRC_NAME1		:=	sort_pile.c \
 					sort_work.c \
-					working_stack_a.c \
-					working_stack_b.c \
 					mid_sort_replace.c \
 
 SRC_NAME2		:=	parse.c \

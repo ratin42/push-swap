@@ -6,18 +6,11 @@
 /*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/24 16:36:34 by Raphael           #+#    #+#             */
-/*   Updated: 2019/07/03 14:11:41 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/04 06:06:13 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-/* static int	get_prev_nbr(t_push *push, t_pile *element)
-{
-	if (element->prev == NULL)
-		return (get_last(push, 'a'));
-	return (element->prev->nbr);
-} */
 
 t_pile		*get_next_element(t_push *push, t_pile *element)
 {
@@ -72,7 +65,6 @@ void		move_first_top(t_push *push, t_pile *first)
 	}
 }
 
-//chercher le plus petit nombre de a et lui donner le tag first
 void		rotate_placement(t_push *push)
 {
 	t_pile	*last;
@@ -99,10 +91,6 @@ void		rotate_placement(t_push *push)
 	move_first_top(push, first);
 }
 
-//faire bouger la pile a avant de push a
-//checker le nombre d'avant et le nombre d'apres pour pouvoir push sans revese
-//optionellement chercher dans b le nombre le plus proche de premier nombre
-//de a afin de reduire le nombre d'operation sur a
 void		mid_sort_replace(t_push *push)
 {
 	t_pile	*element;

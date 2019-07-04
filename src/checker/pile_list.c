@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pile_list.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 22:53:26 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/08 02:28:53 by ratin            ###   ########.fr       */
+/*   Updated: 2019/07/04 06:01:56 by Raphael          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ t_pile		*create_elem(t_push *push, int nbr)
 	if (!(new_elem = malloc(sizeof(*new_elem))))
 		quit_prog(push);
 	new_elem->nbr = nbr;
-	new_elem->pivot = 0;
 	new_elem->sorted = 0;
 	new_elem->next = NULL;
 	new_elem->prev = NULL;
