@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+         #
+#    By: ratin <ratin@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 18:46:26 by ratin             #+#    #+#              #
-#    Updated: 2019/07/04 06:01:12 by Raphael          ###   ########.fr        #
+#    Updated: 2019/07/06 02:24:41 by ratin            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,8 @@ LIB_PATH		:=	libft
 SRC_NAME1		:=	sort_pile.c \
 					sort_work.c \
 					mid_sort_replace.c \
+					move_first_top.c \
+					mv_clst_srtd.c \
 
 SRC_NAME2		:=	parse.c \
 					free.c \
@@ -32,6 +34,7 @@ SRC_NAME2		:=	parse.c \
 					rotate.c \
 					reverse_rotate.c \
 					move_gestion.c \
+					silent_move.c \
 
 
 INC_NAME		:=	push_swap.h

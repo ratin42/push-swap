@@ -6,7 +6,7 @@
 /*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:49:08 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/07 04:55:45 by ratin            ###   ########.fr       */
+/*   Updated: 2019/07/06 02:05:35 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,3 @@ int			main(int ac, char **av)
 	check_order(&push);
 	return (0);
 }
-//makefile qui relink

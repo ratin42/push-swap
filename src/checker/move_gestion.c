@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   move_gestion.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Raphael <Raphael@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:01:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/03 13:23:08 by Raphael          ###   ########.fr       */
+/*   Updated: 2019/07/06 02:24:52 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ void		get_output(t_push *push)
 	while (get_next_line(0, &str) == 1)
 	{
 		check_output(push, str);
-		make_move(push, str);
+		silent_make_move(push, str);
 		free(str);
 	}
 	if (str == NULL)
