@@ -6,7 +6,7 @@
 /*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:49:08 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/06 02:05:35 by ratin            ###   ########.fr       */
+/*   Updated: 2019/07/16 19:37:40 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,10 @@ int			main(int ac, char **av)
 		exit(ERROR);
 	init_push(&push);
 	if (parse_input(&push, ac, av) == ERROR)
+	{
+		ft_putstr("Error\n");
 		return (ERROR);
+	}
 	get_output(&push);
 	check_order(&push);
 	return (0);

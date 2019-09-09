@@ -6,7 +6,7 @@
 #    By: ratin <ratin@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 18:46:26 by ratin             #+#    #+#              #
-#    Updated: 2019/07/06 02:24:41 by ratin            ###   ########.fr        #
+#    Updated: 2019/07/16 18:25:57 by ratin            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,13 +28,13 @@ SRC_NAME1		:=	sort_pile.c \
 SRC_NAME2		:=	parse.c \
 					free.c \
 					pile_list.c \
-					debug.c \
 					swap.c \
 					push.c \
 					rotate.c \
 					reverse_rotate.c \
 					move_gestion.c \
 					silent_move.c \
+					detect_int_limit.c \
 
 
 INC_NAME		:=	push_swap.h

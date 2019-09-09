@@ -6,7 +6,7 @@
 /*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 00:43:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/06 02:23:57 by ratin            ###   ########.fr       */
+/*   Updated: 2019/09/09 17:00:14 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,10 @@
 # include <stdlib.h>
 # include "struct.h"
 # include "../libft/includes/libft.h"
+#include <stdio.h>
 
 # define ERROR		-1
 # define SUCCESS	1
-
-# include <stdio.h>
 
 /*
 ** move function
@@ -46,6 +45,7 @@ t_pile	*create_elem(t_push *push, int nbr);
 int		len_pile(t_push *push, char pile);
 int		len_pile_sorted(t_push *push, char pile);
 int		parse_input(t_push *push, int ac, char **av);
+int		detect_int_limit(char *nbr);
 void	free_pile(t_push *push);
 void	sort_pile(t_push *push);
 void	add_elem(t_push *push, int nbr);
@@ -59,8 +59,4 @@ void	check_output(t_push *push, char *str);
 void	quit_prog(t_push *push);
 void	do_sort(t_push *push);
 
-/*
-** DEBUG
-*/
-void	print_pile(t_push *push);
 #endif

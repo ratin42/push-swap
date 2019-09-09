@@ -6,7 +6,7 @@
 /*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:40:25 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/06 01:55:21 by ratin            ###   ########.fr       */
+/*   Updated: 2019/09/09 17:00:53 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,8 @@ void		sort_pile(t_push *push)
 	else if (len_pile(push, 'a') == 2
 	&& push->pile_a->nbr > push->pile_a->next->nbr)
 		make_move(push, "sa");
-	else
+	else if (len_pile(push, 'a') < 100)
 		do_mid_sort(push);
+	else
+		printf("fail\n");
 }

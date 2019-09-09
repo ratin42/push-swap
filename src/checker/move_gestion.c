@@ -6,7 +6,7 @@
 /*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 04:01:03 by ratin             #+#    #+#             */
-/*   Updated: 2019/07/06 02:24:52 by ratin            ###   ########.fr       */
+/*   Updated: 2019/07/06 03:31:43 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,10 +121,5 @@ void		get_output(t_push *push)
 		check_output(push, str);
 		silent_make_move(push, str);
 		free(str);
-	}
-	if (str == NULL)
-	{
-		ft_putstr("Error\n");
-		quit_prog(push);
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: ratin <ratin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 02:10:53 by ratin             #+#    #+#             */
-/*   Updated: 2019/06/05 04:14:47 by ratin            ###   ########.fr       */
+/*   Updated: 2019/07/23 20:30:29 by ratin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,17 @@ int			parse_input(t_push *push, int ac, char **av)
 		return (ERROR);
 	while (i < ac)
 	{
+//		if (detect_int_limit(av[i]) == ERROR)
+//			return (ERROR);
 		arg = ft_strsplit(av[i], ' ');
 		arg_i = 0;
 		while (arg[arg_i])
 		{
+			if (arg[arg_i][0] == '+')
+			{
+				ft_putstr("Error\n");
+				quit_prog(push);
+			}
 			check_presence(push, ft_atoi(arg[arg_i]));
 			add_elem(push, ft_atoi(arg[arg_i]));
 			arg_i++;
